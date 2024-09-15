@@ -1,0 +1,186 @@
+:root {
+    --primario: #780000;
+    --secundario: #c1121f;
+    --claro: #fdf0d5;
+    --oscuro: #003049;
+    --azul-claro: #669bbc;
+    --fuente-principal: "Jost", sans-serif;
+}
+
+
+.jost-font-400 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Globales */
+body {
+    background-color: rgb(209, 118, 85);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--claro);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--claro);
+    font-family: "Jost", sans-serif;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+.ejemplo1__img {
+    width: 35%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    filter: drop-shadow( 0.5px 0.5px 20px #33f31a75);
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1 span {
+    color: rgb(109, 179, 109);
+    font-size: 2.5rem;
+}
+
+h2 span {
+    color: rgb(109, 179, 109);
+    font-size: 2.5rem;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    background-color: black;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 10px;
+    align-items: center;
+    justify-content: center;
+}
+.container1 img {
+    width: 35%;
+    height: 20rem;
+    background-repeat: no-repeat;
+    filter: drop-shadow( 0.5px 0.5px 20px #33f31a75);
+}
+
+.container1__exp {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    background-color: var(--claro);
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 1px 5px 10px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container1__exp img {
+    width: 95%;
+    box-shadow: 5px 5px 10px;
+    border-radius: 1rem;
+}
+.title {
+    margin-top: 3.5rem;
+    display: flex;
+    justify-content: center;
+    width: 55%;
+    background-color: black;
+    border-radius: 5rem;
+    box-shadow: 5px 5px 40px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 0;      /* Sombra sin desenfoque */
+    box-shadow: 5px 5px 2px;    /* Sombra con ligero desenfoque */
+    box-shadow: 5px 5px 10px;   /* Sombra desenfocada */
+       
+}
+
+#changeImageBtn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: "Jost", sans-serif;
+    background-color: var(--oscuro);
+    border: none;
+    border-radius: 2rem;
+    color: rgb(0, 255, 13);
+    font-weight: 700;
+}
+#increaseFontBtn, #decreaseFontBtn {
+    font-family: "Jost", sans-serif;
+    font-size: 2rem;
+    padding: 4rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#increaseFontBtn {
+    color: var(--claro);
+    background-color: var(--oscuro);
+}
+
+#decreaseFontBtn {
+    color: var(--claro);
+    background-color: var(--primario);
+    
+
+}
